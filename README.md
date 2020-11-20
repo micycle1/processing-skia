@@ -46,7 +46,7 @@ public void draw() {
 <img src="resources/result_example.png" alt="Example" width="400"squares_examplesquares_example/></a><br></p>
 
 ## Further Work
-Further work would wrap the Skija library itself, creating something like a `PSurfaceSkia` interface leading to a dedicated Skia-based renderer in Processing.
+Further work would wrap the Skija library itself, creating Processing-like bindings around Skija's API (a `PGraphicsSkia`) leading to the possibility of a dedicated Skia-based renderer in Processing.
 
 ## Another Example
 
