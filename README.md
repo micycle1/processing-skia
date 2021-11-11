@@ -7,11 +7,11 @@
 **processing-skia** does the backend work of setting Skija's render target to Processing, so you can easily use any Skija [bindings](https://github.com/JetBrains/skija/blob/master/docs/Getting%20Started.md) to draw into a Processing sketch.
 
 ## Requirements
-* Java 11+
+* Java 11+ (Processing 4)
 * A Processing sketch using either the `P2D` or `P3D` renderer.
 
 ## Download
-Download the processing-skia *jar* from [releases](https://github.com/micycle1/processing-skia/releases/).
+Download a .jar of *processing-skia* from [releases](https://github.com/micycle1/processing-skia/releases/).
 
 ## Example
 ### Code
@@ -45,12 +45,22 @@ public void draw() {
 <p align="center">
 <img src="resources/result_example.png" alt="Example" width="400"squares_examplesquares_example/></a><br></p>
 
+## More examples
+
+A number of example Processing sketches are provided in [examples](https://github.com/micycle1/processing-skia/tree/main/examples).
+
+<table>
+  <tr>
+    <td align="center" valign="center"><b>Dash Stroke</td>
+    <td align="center" valign="center"><b>Text on Path</td>
+    <td align="center" valign="center"><b></td>
+  </tr>
+  <tr>
+    <td valign="top" width = 33%><img src="resources/dashStroke.gif"></td>
+    <td valign="top" width = 33%><img src="resources/textOnPath.gif"></td>
+    <td valign="top" width = 33%><img src="resources/squares_example.gif"></td>
+  </tr>
+</table>
+
 ## Further Work
 Further work would wrap the Skija library itself, creating Processing-like bindings around Skija's API (a `PGraphicsSkia`) leading to the possibility of a dedicated Skia-based renderer in Processing.
-
-## Another Example
-
-This is the [squares example](https://github.com/JetBrains/skija/blob/master/examples/lwjgl/src/main/java/org/jetbrains/skija/examples/lwjgl/SquaresScene.java) as rendered in a Processing sketch. Here, the gradient fill and square-circle morphing provide features that are not easily attained in vanilla Processing, but are easily attained with the Skia renderer.
-
-<p align="center">
-<img src="resources/squares_example.gif" alt="Example"/></a><br></p>
